@@ -1,0 +1,468 @@
+<html>
+
+<head>
+    <title>RainWater Harvesting</title>
+    <style>
+        body {
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+        }
+
+        body {
+            font-family: 'Open Sans', sans-serif;
+        }
+
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6,
+        button,
+        nav {
+            font-family: 'Poppins', sans-serif;
+             color: #166534;
+        }
+
+        h1 {
+            font-weight: 700;
+        }
+
+        p {
+            line-height: 1.7;
+        }
+
+
+        nav {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .btns {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+        }
+
+        nav {
+
+            background-color: rgb(28, 26, 26);
+            color: white;
+            width: 35vh;
+            height: 100vh;
+            align-items: center;
+            position: fixed;
+
+        }
+
+        nav a {
+            margin-top: 0.1rem;
+            color: aliceblue;
+            text-decoration: none;
+            padding: 1rem 6.7rem;
+            transition: 1s ease-in;
+        }
+
+        nav a:hover {
+            margin-top: 0.1rem;
+            color: aliceblue;
+            text-decoration: underline;
+
+
+        }
+
+        #head {
+            font-size: 1.5rem;
+        }
+
+        .main {
+            margin-left: 35vh;
+            width: calc(100% - 35vh);
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            align-items: center;
+        }
+
+        #main-img {
+           /* margin-left: 35vh; */
+           width: 80vw;
+           height: 70vh;
+           object-fit: contain;
+        }
+
+        #logo {
+            margin-top: 0.2rem;
+        }
+
+        #head-btn {
+            margin-top: 1rem;
+
+        }
+        #head2{
+            margin: 0;
+            margin-top: 2rem;
+        }
+        
+.methods {
+    max-width: 1100px;
+    margin: 60px auto;
+    padding: 20px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.methods h1 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 36px;
+    color: #166534;
+    text-align: center;
+}
+
+.intro {
+    text-align: center;
+    line-height: 1.8;
+    color: #555;
+    margin-bottom: 35px;
+}
+
+.method {
+    padding: 20px;
+    margin-bottom: 20px;
+    border-left: 4px solid #16a34a;
+    background: #f0fdf4;
+    border-radius: 8px;
+}
+
+.method h2 {
+    font-family: 'Poppins', sans-serif;
+    color: #166534;
+    font-size: 22px;
+}
+
+.method p {
+    line-height: 1.8;
+    color: #374151;
+}
+
+.construction-guide {
+    max-width: 1000px;
+    margin: 60px auto;
+    padding: 25px;
+    font-family: 'Open Sans', sans-serif;
+    color: #263238;
+}
+
+.construction-guide h1 {
+    font-family: 'Poppins', sans-serif;
+    color: #166534;
+    font-size: 36px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.guide-intro {
+    text-align: center;
+    line-height: 1.8;
+    color: #555;
+    margin-bottom: 40px;
+}
+
+.guide-step,
+.guide-section {
+    padding: 24px;
+    margin-bottom: 22px;
+    background: #f0fdf4;
+    border-left: 5px solid #16a34a;
+    border-radius: 10px;
+}
+
+.guide-step h2,
+.guide-section h2,
+.guide-note h2 {
+    font-family: 'Poppins', sans-serif;
+    color: #166534;
+    font-size: 22px;
+    margin-top: 0;
+}
+
+.guide-step p,
+.guide-section p,
+.guide-note p {
+    font-size: 16px;
+    line-height: 1.8;
+}
+
+.guide-section ul {
+    padding-left: 24px;
+    line-height: 2;
+}
+
+.guide-note {
+    padding: 24px;
+    border: 1px solid #f59e0b;
+    background: #fffbeb;
+    border-radius: 10px;
+}
+
+@media (max-width: 600px) {
+    .construction-guide {
+        padding: 15px;
+        margin: 30px auto;
+    }
+
+    .construction-guide h1 {
+        font-size: 28px;
+    }
+
+    .guide-step,
+    .guide-section,
+    .guide-note {
+        padding: 18px;
+    }
+}
+
+    </style>
+</head>
+
+<body >
+    <nav>
+        <div id="logo" style="text-align: center;">Rainwater.</div>
+        <div class="btns" style="justify-content: center;">
+            <a id="head-btn" href="#">Home</a>
+            <a href="#">Methods</a>
+            <a href="#">Construction</a>
+            <a href="#">Gov Support</a>
+            <a href="#">Contact</a>
+        </div>
+    </nav>
+    <div class="main">
+        <h1 id="head">Save Rain Today, Secure Water Tomorrow</h1>
+        <img id="main-img"
+            src="https://media.geeksforgeeks.org/wp-content/uploads/20231108115542/Rainwater-Harvesting.png"
+            alt="Rainwater">
+<br><br>
+        <h2 id="head2">Every Drop Counts — Save Water, Save Life</h2>
+        <h4>Harvest Rainwater, Build a Better Future</h4>
+        <p>Water is one of the most precious resources on Earth, yet millions of people face water shortages every year.
+            Rainwater harvesting is a simple, eco-friendly solution that helps us collect and store rainwater for future
+            use instead of letting it go to waste.
+            By collecting rainwater from rooftops and other suitable surfaces, we can reduce water wastage, recharge
+            groundwater, support agriculture, and create a more sustainable environment. Every home, school, college,
+            and community can contribute to water conservation by adopting rainwater harvesting practices.</p>
+    </div>
+
+    <hr style="height: 2px; width: 50%;margin-left: 70vh;   align-items: center; background-color: rgb(71, 56, 56);" >
+<section class="methods" id="methods" style="margin-left: 35vh;">
+    <h1>Methods of Rainwater Harvesting</h1>
+    <p class="intro">
+        Rainwater harvesting can be done in different ways depending on
+        the available space, rainfall, and water requirements. The main
+        methods help collect, store, and conserve rainwater for future use.
+    </p>
+
+    <div class="method">
+        <h2>1. Rooftop Rainwater Harvesting</h2>
+        <p>
+            Rooftop rainwater harvesting involves collecting rainwater
+            from rooftops using gutters and pipes. The collected water
+            passes through filters and is stored in tanks for later use.
+            It is one of the simplest methods for homes, schools, and
+            commercial buildings.
+        </p>
+    </div>
+
+    <div class="method">
+        <h2>2. Surface Runoff Harvesting</h2>
+        <p>
+            Surface runoff harvesting collects rainwater that flows
+            over the ground during rainfall. This water is directed into
+            ponds, reservoirs, or storage structures. It is especially
+            useful for agriculture, community water supplies, and
+            managing rainwater in open areas.
+        </p>
+    </div>
+
+    <div class="method">
+        <h2>3. Groundwater Recharge</h2>
+        <p>
+            Groundwater recharge allows rainwater to seep into the soil
+            and replenish underground water reserves. Recharge pits,
+            trenches, and suitable recharge wells can be used for this
+            purpose. Proper filtration and site assessment are important
+            to prevent groundwater contamination.
+        </p>
+    </div>
+
+    <div class="method">
+        <h2>4. Rainwater Storage Tanks</h2>
+        <p>
+            In this method, rainwater is collected from rooftops or
+            other suitable surfaces and stored in tanks for future use.
+            The stored water can be used for gardening, cleaning,
+            washing, and irrigation, depending on its quality and
+            intended purpose.
+        </p>
+    </div>
+
+    <div class="method">
+        <h2>5. Recharge Pits and Trenches</h2>
+        <p>
+            Recharge pits and trenches are structures designed to
+            collect filtered rainwater and help it infiltrate into
+            the ground. They are useful in suitable locations where
+            soil conditions allow water to percolate effectively.
+            Regular maintenance prevents blockage and improves
+            performance.
+        </p>
+    </div>
+
+    <div class="method">
+        <h2>6. Traditional Rainwater Harvesting</h2>
+        <p>
+            Traditional systems such as tankas, johads, kunds, and
+            baoris have been used for generations, especially in
+            Rajasthan. These structures collect or store rainwater
+            and demonstrate how local communities have adapted to
+            water scarcity and dry climatic conditions.
+        </p>
+    </div>
+</section>
+
+<section class="construction-guide" id="construction" style="margin-left: 35vh;">  
+
+    <h1>Rainwater Harvesting Construction Guide</h1>
+
+    <p class="guide-intro">
+        Building a rainwater harvesting system is an effective way
+        to conserve water and reduce water wastage. Follow this
+        step-by-step guide to understand how to plan, construct,
+        and maintain a basic rooftop rainwater harvesting system.
+    </p>
+
+    <!-- Materials Required -->
+    <div class="guide-section">
+        <h2>1. Materials Required</h2>
+        <p>Collect the following materials before starting construction:</p>
+
+        <ul>
+            <li>PVC pipes and connectors</li>
+            <li>Roof gutters and downpipes</li>
+            <li>Rainwater filter or filter mesh</li>
+            <li>First-flush diverter</li>
+            <li>Water storage tank with a lid</li>
+            <li>Gravel, coarse sand, and filter media if required</li>
+            <li>Pipe clamps, sealants, and suitable fittings</li>
+            <li>Overflow pipe and drainage arrangements</li>
+        </ul>
+    </div>
+
+    <!-- Step 1 -->
+    <div class="guide-step">
+        <h2>2. Step 1: Select the Catchment Area</h2>
+        <p>
+            Choose a suitable rooftop or other clean catchment surface.
+            Measure its area and inspect it for dirt, damaged sections,
+            and possible sources of contamination. The roof area and
+            local rainfall help determine how much water can be collected.
+        </p>
+    </div>
+
+    <!-- Step 2 -->
+    <div class="guide-step">
+        <h2>3. Step 2: Install Gutters and Pipes</h2>
+        <p>
+            Install gutters along suitable roof edges to collect rainwater.
+            Connect the gutters to downpipes that direct water towards
+            the filter and storage tank. Secure all pipes properly and
+            provide a suitable slope so water flows without stagnating.
+        </p>
+    </div>
+
+    <!-- Step 3 -->
+    <div class="guide-step">
+        <h2>4. Step 3: Install a First-Flush System</h2>
+        <p>
+            A first-flush diverter directs the initial rainfall away from
+            the storage tank. This helps remove some dust, leaves, and
+            contaminants accumulated on the roof before cleaner rainwater
+            enters the collection system.
+        </p>
+    </div>
+
+    <!-- Step 4 -->
+    <div class="guide-step">
+        <h2>5. Step 4: Set Up the Filtration Unit</h2>
+        <p>
+            Install a suitable filter to remove leaves, debris, and
+            suspended particles. Depending on the system design, filter
+            media may include mesh, gravel, or sand. Filters must be
+            accessible for regular cleaning and maintenance.
+        </p>
+    </div>
+
+    <!-- Step 5 -->
+    <div class="guide-step">
+        <h2>6. Step 5: Install the Storage Tank</h2>
+        <p>
+            Place a suitable water storage tank on a stable, level base
+            designed to support its full weight when filled. Connect the
+            filtered water inlet and provide a covered, mosquito-proof
+            opening, a suitable overflow pipe, and an accessible cleaning
+            arrangement.
+        </p>
+    </div>
+
+    <!-- Step 6 -->
+    <div class="guide-step">
+        <h2>7. Step 6: Create a Groundwater Recharge Structure</h2>
+        <p>
+            If groundwater recharge is planned instead of storage, a
+            suitable recharge pit or trench may be constructed after
+            assessing the soil, groundwater conditions, and local
+            regulations. Filter incoming water and ensure the structure
+            will not introduce contaminants into groundwater.
+        </p>
+    </div>
+
+    <!-- Step 7 -->
+    <div class="guide-step">
+        <h2>8. Step 7: Test the System</h2>
+        <p>
+            Before regular use, test the system during rainfall or with
+            a controlled water flow. Check pipe joints, filters, tank
+            connections, and overflow drainage for leaks or blockages.
+            Correct any problems before operating the system routinely.
+        </p>
+    </div>
+
+    <!-- Maintenance -->
+    <div class="guide-section">
+        <h2>9. Maintenance and Safety</h2>
+        <ul>
+            <li>Clean rooftops and gutters before the rainy season.</li>
+            <li>Inspect and clean filters regularly.</li>
+            <li>Keep storage tanks covered and mosquito-proof.</li>
+            <li>Check pipes, joints, and overflow outlets for blockages.</li>
+            <li>Never enter a storage tank or pit without proper safety procedures.</li>
+            <li>Test and treat water appropriately before drinking.</li>
+        </ul>
+    </div>
+
+    <div class="guide-note">
+        <h2>Important Note</h2>
+        <p>
+            Construction requirements vary according to roof type, rainfall,
+            soil conditions, groundwater depth, and intended water use.
+            Consult a qualified professional for structural work, large
+            storage tanks, and groundwater recharge designs.
+        </p>
+    </div>
+
+</section>
+
+
+</body>
+
+</html>
